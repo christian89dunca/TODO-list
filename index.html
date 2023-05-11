@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+  <body>
+    <div class="modal-placeholder" id="insert-modal"></div>
+    <div class="container">
+      <h1>To-Do App</h1>
+      <form onsubmit="addTask()">
+        <input type="text" placeholder="Add a task" id="task-input">
+        <button class="add-btn" type="submit" id="add-task-btn">Add</button>
+      </form>
+      <ul class="tasks" id="task-list">
+      </ul>
+      <footer id="footer-id"></footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

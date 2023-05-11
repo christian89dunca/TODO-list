@@ -1,0 +1,231 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-bottom: 20px;
+}
+
+.footer-container{
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  border-top: 2px solid #ddd;
+}
+
+input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-radius: 4px;
+  box-shadow: 0px 5px 15px #ccc;
+}
+
+button.add-btn,
+button.remove-all-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 20px;
+  width:100px;
+  background-color: #cf673a;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.remove-all-btn {
+  border: 2px solid #cf673a;
+  background-color: #fff;
+  color: #cf673a;
+  padding: 7.5px 10px 2.5px 10px;
+}
+
+button.add-btn:hover {
+  transition: 0.2s;
+  background-color: #be5e35;
+}
+
+button.remove-all-btn:hover {
+  transition: 0.2s;
+  background-color: #cf673a;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+li span {
+  flex-grow: 1;
+}
+
+li button {
+  margin-left: 10px;
+  padding: 5px;
+  border: none;
+  background-color: #ddd;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+li button.done-btn {
+  min-width:100px;
+  border: 2px solid #4CAF50;
+  border-radius: 3px;
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+li button.done-btn:hover {
+  transition: 0.2s;
+  background-color: #459f48;
+}
+
+li button.resume-btn {
+  min-width:100px;
+  border: 2px solid #4CAF50;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #333;
+}
+
+li button.resume-btn:hover {
+  transition: 0.2s;
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+li button.edit-btn,  
+li button.remove-btn{
+  background-color: #fff;
+  color: #333;
+}
+
+li span.size-remove-btn{
+  font-size: 20px;
+  color: #aaa;
+}
+li span.size-remove-btn:hover{
+  transition: 0.2s;
+  color: #cf4e3a;
+}
+
+li span.size-edit-btn{
+  font-size: 20px;
+  color: #aaa;
+}
+li span.size-edit-btn:hover{
+  transition: 0.2s;
+  color: #000;
+}
+
+/* MODAL STYLING */
+.modal-background{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-container{
+  position: absolute;
+  top: 30%;
+  width: 400px;
+  height: 200px;
+  min-height: 200px;
+  background-color: #fff;
+  border: none;
+  border-radius: 2.5px;
+  box-shadow: 0px 0px 20px #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.confirm-textarea{
+  position: relative;
+  height: 75%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.confirm-textarea h3{
+  padding: 0px 20px;
+}
+.confirm-btns{
+  position: relative;
+  width: 90%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.confirm-btns button{
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  width: 70px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.confirm-btns button.no-btn{
+  border: 2px solid #cf673a;
+  background-color: #fff;
+  color: #333;
+}
+.confirm-btns button.no-btn:hover{
+  transition: 0.2s;
+  background-color: #cf673a;
+  color: #fff;
+}
+.confirm-btns button.yes-btn{
+  border: 2px solid #cf673a;
+  background-color: #cf673a;
+  color: #fff;
+}
+.confirm-btns button.yes-btn:hover{
+  transition: 0.2s;
+  background-color: #be5e35;
+}
